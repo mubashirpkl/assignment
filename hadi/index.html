@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Shopping Website</title>
+<style>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Login & Signup Styles */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Home Page Styles */
+.featured-products {
+    /* Add styles for featured products section */
+    border: #333;
+}
+
+/* Category Page Styles */
+.categories {
+    /* Add styles for category listing */
+    border: #333;
+}
+
+/* Product Page Styles */
+.product-details {
+    /* Add styles for product details */
+    border: #333;
+}
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Login Form -->
+    <form action="login.php" method="POST">
+        <input type="text" name="username" placeholder="Username or Email">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+    <a href="signup.html">Create an Account</a>
+
+    <!-- Signup Form -->
+    <form action="signup.php" method="POST">
+        <input type="text" name="fullname" placeholder="Full Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="address" placeholder="Address">
+        <button type="submit">Sign Up</button>
+    </form>
+    <a href="login.html">Already have an account? Login</a>
+
+    <!-- Home Page Featured Products -->
+    <section class="featured-products">
+        <!-- Add featured products here -->
+    </section>
+
+    <!-- Category Page -->
+    <section class="categories">
+        <!-- Add category listing here -->
+    </section>
+
+    <!-- Product Pages -->
+    <section class="product-details">
+        <!-- Add product details here -->
+    </section>
+
+    <!-- Contact Us Form -->
+    <section class="contact-form">
+        <!-- Add contact form here -->
+    </section>
+</div>
+
+<footer>
+    <!-- Footer content -->
+</footer>
+</body>
+</html>
